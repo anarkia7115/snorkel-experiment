@@ -17,9 +17,9 @@ def offsets_to_token(left, right, offset_array, lemmas, punc=set(punctuation)):
     return range(token_start, token_end)
 
 
-class CDRTagger(object):
+class ClinvarTagger(object):
 
-    def __init__(self, fname='data/unary_tags.pkl.bz2'):   
+    def __init__(self, fname='data/unary_tags.pkl.bz2'):
         with bz2.BZ2File(fname, 'rb') as f:
             self.tag_dict = load(f)
 
@@ -39,10 +39,10 @@ class CDRTagger(object):
         return parts
 
 
-class TaggerOneTagger(CDRTagger):
-    
+class TaggerOneTagger(ClinvarTagger):
+
     def __init__(self, fname_tags='data/taggerone_unary_tags_cdr.pkl.bz2',
-        fname_mesh='data/chem_dis_mesh_dicts.pkl.bz2'):
+                 fname_mesh='data/chem_dis_mesh_dicts.pkl.bz2'):
         with bz2.BZ2File(fname_tags, 'rb') as f:
             self.tag_dict = load(f)
         with bz2.BZ2File(fname_mesh, 'rb') as f:

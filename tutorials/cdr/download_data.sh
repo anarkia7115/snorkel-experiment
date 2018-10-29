@@ -1,5 +1,5 @@
 #!/bin/sh
-mkdir downloads
+#mkdir downloads
 cd downloads
 echo "Downloading CDR data..."
 wget http://www.biocreative.org/media/store/files/2016/CDR_Data.zip

@@ -39,3 +39,20 @@ tutorials/intro/data/articles-train.tsv
 tutorials/intro/data/gold_labels.tsv
 
 tutorials/tables/data/hardware/
+tutorials/cdr/download
+
+build/
+data/
+dist/
+ipython.sh
+snorkel/bin/
+snorkel/lib64
+snorkel/pyvenv.cfg
+
+tmp/
+treedlib/
+
+tutorials/intro/data/unzip/
+tutorials/intro/intro_totorial_1.py
+tutorials/intro/intro_totorial_2.py
+
